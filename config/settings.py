@@ -107,7 +107,7 @@ SIMPLE_JWT = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    'http://localhost:5173',"https://irateassessment.pages.dev"
 ]
 
 # Channels settings
