@@ -107,7 +107,7 @@ SIMPLE_JWT = {
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',"https://irateassessment.pages.dev"
+    'http://localhost:5173',"https://irateassessment.netlify.app"
 ]
 
 # Channels settings
