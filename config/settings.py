@@ -11,9 +11,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'mysecretkey')
 
 DEBUG = True
-
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 ALLOWED_HOSTS = ['localhost', '127.0.0.1','irateassessment.onrender.com']
-
+if not DEBUG:
+    STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
