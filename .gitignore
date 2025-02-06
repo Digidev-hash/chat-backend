@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+*.env
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Database
+db.sqlite3
+*.db
+
+# Logs and debugging
+*.log
+logs/
+debug.log
+
+# Local Django settings
+settings_local.py
+
+# Media and static files
+media/
+staticfiles/
+static/
+
+# Render and deployment-specific files
+.DS_Store
+*.swp
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+*.bak
+
+# Node.js (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Django-specific
+*.pyc
+migrations/*  # Exclude all migrations EXCEPT __init__.py
+!migrations/__init__.py
+
+# Secrets and config
+config.json
+*.pem
