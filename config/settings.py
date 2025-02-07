@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'mysecretkey')
 DEBUG = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','irateassessment.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','irateassessment.onrender.com','https://irateassessment.onrender.com']
 if not DEBUG:
     STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 INSTALLED_APPS = [
@@ -104,10 +104,13 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
 }
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://irateassessment.onrender.com",
+    "https://irateassessment.netlify.app",
+]
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',"https://irateassessment.netlify.app"
+    'http://localhost:5173',"https://irateassessment.netlify.app","wss://irateassessment.netlify.app",
 ]
 
 # Channels settings
