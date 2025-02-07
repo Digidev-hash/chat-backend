@@ -3,6 +3,9 @@
 This is a real-time chat application built with a React frontend and a Django backend. It allows users to create accounts, start conversations, and exchange messages in real-time.
 
 live verssion is at https://irateassessment.netlify.app/
+i haved seeded the database with some accounts and conversation
+account usernames =>>>> Grace Hopper,Marie Curie,Abraham Lincoln,Albert Einstein
+passwords ->>>password123
 
 ## Prerequisites
 
